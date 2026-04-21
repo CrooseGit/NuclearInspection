@@ -17,7 +17,7 @@ First, clone the repository to your local environment:
 
 ```sh
 git clone ....
-cd NuclearInspection
+cd nuclearInspection
 ```
 
 ### **2. Build and start the Containers with Docker Compose**  
