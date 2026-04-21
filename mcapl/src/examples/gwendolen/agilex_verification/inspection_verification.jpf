@@ -1,7 +1,7 @@
 @using = mcapl
 
 target = ail.util.AJPF_w_AIL
-#target.args =src/examples/gwendolen/agilex_verification/inspection_verification.ail,src/examples/gwendolen/agilex_verification/inspection_verification.psl,3a
+target.args =src/examples/gwendolen/agilex_verification/inspection_verification.ail,src/examples/gwendolen/agilex_verification/inspection_verification.psl,1a
 
 log.info = ajpf.MCAPLcontroller,ajpf.MCAPLAgent,ail.mas.DefaultEnvironment,ajpf.product.Product,gwendolen.agilex_verification.inspectionVerificationEnv
 log.fine = ail.semantics.AILAgent

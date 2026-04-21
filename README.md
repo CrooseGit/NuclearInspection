@@ -1,8 +1,7 @@
 
 ---
 
-# **Safe-ROS**  
-An Architecture for Autonomous Robots in Safety-Critical Domains
+# Developing Safety-Critical Autonomous Robotics:  Nuclear Inspection Case Study
 ---
 
 This repository provides a Docker-based setup for experimenting with [MCAPL](https://github.com/mcapl/mcapl) tools in the [EEE Radiation Store Gazebo simulation](https://github.com/EEEManchester/gazebo_radiation_plugin), facilitated via Docker Compose. It integrates key components for autonomous robot development and verification, including [FRET](https://github.com/NASA-SW-VnV/fret) for formal requirements elicitation, [Java ROSBridge](https://github.com/h2r/java_rosbridge) for communication with ROS, [AgileX robotic packages](https://github.com/agilexrobotics/scout_ros) for robot control and simulation, and [Dafny](https://dafny.org/) for formal verification.
@@ -18,7 +17,7 @@ First, clone the repository to your local environment:
 
 ```sh
 git clone ....
-cd Safe-ROS
+cd NuclearInspection
 ```
 
 ### **2. Build and start the Containers with Docker Compose**  
