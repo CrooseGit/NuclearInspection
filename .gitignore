@@ -1,4 +1,5 @@
 .DS_Store
 catkin_ws/.catkin_workspace
 catkin_ws/build/
-catkin_ws/devel/
+catkin_ws/devel/mcapl/src/examples/gwendolen/agilex_verification/verification_results/
+mcapl/src/examples/gwendolen/agilex_verification/verification_results/
