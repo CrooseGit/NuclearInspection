@@ -1,8 +1,0 @@
-prefix=/home/ubuntu/catkin_ws/install
-
-Name: cmd_vel_interceptor
-Description: Description of cmd_vel_interceptor
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

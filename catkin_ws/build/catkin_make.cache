@@ -1,2 +1,0 @@
-cmd_vel_interceptor:gwendolen_move_base:navigation/openslam_gmapping:navigation/pointcloud_to_laserscan:navigation/slam_gmapping/gmapping:navigation/slam_gmapping/slam_gmapping:rf2o_laser_odometry:scout_ros/scout_base:scout_ros/scout_bringup:scout_ros/scout_control:scout_ros/scout_description:scout_ros/scout_gazebo_sim:scout_ros/scout_msgs:simple_navigation_goals:ugv_sdk/ugv_sdk:ugv_sdk/wrp_io
--DCATKIN_DEVEL_PREFIX=/home/ubuntu/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/ubuntu/catkin_ws/install -G Unix Makefiles
