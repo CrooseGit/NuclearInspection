@@ -15,6 +15,7 @@ services:
       - ./catkin_ws:/home/ubuntu/catkin_ws # Maps local folder to container
       - ./java_rosbridge:/home/ubuntu/java_rosbridge # Maps local folder to container
       - ./mcapl:/home/ubuntu/mcapl # Maps local folder to container
+      - ./rust_nodes:/home/ubuntu/rust_nodes
       - /etc/localtime:/etc/localtime:ro  # Synchronize time with host
       - /etc/timezone:/etc/timezone:ro    # Ensure correct timezone
     environment:

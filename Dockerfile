@@ -32,10 +32,11 @@ RUN apt update && apt install -y \
     && apt clean && rm -rf /var/lib/apt/lists/*
 
 ## Install Apache Maven
-RUN wget -qO- https://dlcdn.apache.org/maven/maven-3/3.9.11/binaries/apache-maven-3.9.11-bin.tar.gz | tar xz -C /opt/ \
+RUN wget -qO- https://dlcdn.apache.org/maven/maven-3/3.9.16/binaries/apache-maven-3.9.16-bin.tar.gz | tar xz -C /opt/ \
     && ln -s /opt/apache-maven-3.9.9 /opt/maven
 ENV M2_HOME='/opt/maven'
 ENV PATH="$M2_HOME/bin:$PATH"
+
 
 
 # Create the ubuntu user if it does not exist
@@ -60,7 +61,6 @@ ENV LC_ALL=en_US.UTF-8
 USER ubuntu
 WORKDIR /home/ubuntu
 
-
 # Install Gazebo and required ROS packages
 USER root
 RUN sh -c 'echo "deb http://packages.osrfoundation.org/gazebo/ubuntu-stable `lsb_release -cs` main" > /etc/apt/sources.list.d/gazebo-stable.list' && \
@@ -68,7 +68,11 @@ RUN sh -c 'echo "deb http://packages.osrfoundation.org/gazebo/ubuntu-stable `lsb
     apt update && apt install -y ros-noetic-gazebo-ros && \
     apt clean && rm -rf /var/lib/apt/lists/*
 
-
+## Install Rust and build cargo project
+RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+ENV PATH="$HOME/.cargo/bin:$PATH"
+RUN . "$HOME/.cargo/env"
+WORKDIR /home/ubuntu/rust_nodes
 
 ## Install IntelliJ IDEA (Community Edition)
 WORKDIR /tmp
