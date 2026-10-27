@@ -19,7 +19,7 @@ add_custom_target(scout_msgs_generate_messages ALL)
 
 get_filename_component(_filename "/home/ubuntu/catkin_ws/src/scout_ros/scout_msgs/msg/ScoutStatus.msg" NAME_WE)
 add_custom_target(_scout_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "scout_msgs" "/home/ubuntu/catkin_ws/src/scout_ros/scout_msgs/msg/ScoutStatus.msg" "std_msgs/Header:scout_msgs/ScoutDriverState:scout_msgs/ScoutLightState:scout_msgs/ScoutMotorState"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "scout_msgs" "/home/ubuntu/catkin_ws/src/scout_ros/scout_msgs/msg/ScoutStatus.msg" "std_msgs/Header:scout_msgs/ScoutMotorState:scout_msgs/ScoutLightState:scout_msgs/ScoutDriverState"
 )
 
 get_filename_component(_filename "/home/ubuntu/catkin_ws/src/scout_ros/scout_msgs/msg/ScoutMotorState.msg" NAME_WE)
@@ -56,7 +56,7 @@ add_custom_target(_scout_msgs_generate_messages_check_deps_${_filename}
 _generate_msg_cpp(scout_msgs
   "/home/ubuntu/catkin_ws/src/scout_ros/scout_msgs/msg/ScoutStatus.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/ubuntu/catkin_ws/src/scout_ros/scout_msgs/msg/ScoutDriverState.msg;/home/ubuntu/catkin_ws/src/scout_ros/scout_msgs/msg/ScoutLightState.msg;/home/ubuntu/catkin_ws/src/scout_ros/scout_msgs/msg/ScoutMotorState.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/ubuntu/catkin_ws/src/scout_ros/scout_msgs/msg/ScoutMotorState.msg;/home/ubuntu/catkin_ws/src/scout_ros/scout_msgs/msg/ScoutLightState.msg;/home/ubuntu/catkin_ws/src/scout_ros/scout_msgs/msg/ScoutDriverState.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/scout_msgs
 )
 _generate_msg_cpp(scout_msgs
@@ -129,7 +129,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS scout_msgs_generate_messages_cpp)
 _generate_msg_eus(scout_msgs
   "/home/ubuntu/catkin_ws/src/scout_ros/scout_msgs/msg/ScoutStatus.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/ubuntu/catkin_ws/src/scout_ros/scout_msgs/msg/ScoutDriverState.msg;/home/ubuntu/catkin_ws/src/scout_ros/scout_msgs/msg/ScoutLightState.msg;/home/ubuntu/catkin_ws/src/scout_ros/scout_msgs/msg/ScoutMotorState.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/ubuntu/catkin_ws/src/scout_ros/scout_msgs/msg/ScoutMotorState.msg;/home/ubuntu/catkin_ws/src/scout_ros/scout_msgs/msg/ScoutLightState.msg;/home/ubuntu/catkin_ws/src/scout_ros/scout_msgs/msg/ScoutDriverState.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/scout_msgs
 )
 _generate_msg_eus(scout_msgs
@@ -202,7 +202,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS scout_msgs_generate_messages_eus)
 _generate_msg_lisp(scout_msgs
   "/home/ubuntu/catkin_ws/src/scout_ros/scout_msgs/msg/ScoutStatus.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/ubuntu/catkin_ws/src/scout_ros/scout_msgs/msg/ScoutDriverState.msg;/home/ubuntu/catkin_ws/src/scout_ros/scout_msgs/msg/ScoutLightState.msg;/home/ubuntu/catkin_ws/src/scout_ros/scout_msgs/msg/ScoutMotorState.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/ubuntu/catkin_ws/src/scout_ros/scout_msgs/msg/ScoutMotorState.msg;/home/ubuntu/catkin_ws/src/scout_ros/scout_msgs/msg/ScoutLightState.msg;/home/ubuntu/catkin_ws/src/scout_ros/scout_msgs/msg/ScoutDriverState.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/scout_msgs
 )
 _generate_msg_lisp(scout_msgs
@@ -275,7 +275,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS scout_msgs_generate_messages_lisp)
 _generate_msg_nodejs(scout_msgs
   "/home/ubuntu/catkin_ws/src/scout_ros/scout_msgs/msg/ScoutStatus.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/ubuntu/catkin_ws/src/scout_ros/scout_msgs/msg/ScoutDriverState.msg;/home/ubuntu/catkin_ws/src/scout_ros/scout_msgs/msg/ScoutLightState.msg;/home/ubuntu/catkin_ws/src/scout_ros/scout_msgs/msg/ScoutMotorState.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/ubuntu/catkin_ws/src/scout_ros/scout_msgs/msg/ScoutMotorState.msg;/home/ubuntu/catkin_ws/src/scout_ros/scout_msgs/msg/ScoutLightState.msg;/home/ubuntu/catkin_ws/src/scout_ros/scout_msgs/msg/ScoutDriverState.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/scout_msgs
 )
 _generate_msg_nodejs(scout_msgs
@@ -348,7 +348,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS scout_msgs_generate_messages_nodejs
 _generate_msg_py(scout_msgs
   "/home/ubuntu/catkin_ws/src/scout_ros/scout_msgs/msg/ScoutStatus.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/ubuntu/catkin_ws/src/scout_ros/scout_msgs/msg/ScoutDriverState.msg;/home/ubuntu/catkin_ws/src/scout_ros/scout_msgs/msg/ScoutLightState.msg;/home/ubuntu/catkin_ws/src/scout_ros/scout_msgs/msg/ScoutMotorState.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/home/ubuntu/catkin_ws/src/scout_ros/scout_msgs/msg/ScoutMotorState.msg;/home/ubuntu/catkin_ws/src/scout_ros/scout_msgs/msg/ScoutLightState.msg;/home/ubuntu/catkin_ws/src/scout_ros/scout_msgs/msg/ScoutDriverState.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/scout_msgs
 )
 _generate_msg_py(scout_msgs

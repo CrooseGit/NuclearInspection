@@ -1,18 +1,18 @@
 
 "use strict";
 
-let ScoutBmsStatus = require('./ScoutBmsStatus.js');
-let ScoutMotorState = require('./ScoutMotorState.js');
 let ScoutLightState = require('./ScoutLightState.js');
+let ScoutDriverState = require('./ScoutDriverState.js');
 let ScoutLightCmd = require('./ScoutLightCmd.js');
 let ScoutStatus = require('./ScoutStatus.js');
-let ScoutDriverState = require('./ScoutDriverState.js');
+let ScoutMotorState = require('./ScoutMotorState.js');
+let ScoutBmsStatus = require('./ScoutBmsStatus.js');
 
 module.exports = {
-  ScoutBmsStatus: ScoutBmsStatus,
-  ScoutMotorState: ScoutMotorState,
   ScoutLightState: ScoutLightState,
+  ScoutDriverState: ScoutDriverState,
   ScoutLightCmd: ScoutLightCmd,
   ScoutStatus: ScoutStatus,
-  ScoutDriverState: ScoutDriverState,
+  ScoutMotorState: ScoutMotorState,
+  ScoutBmsStatus: ScoutBmsStatus,
 };

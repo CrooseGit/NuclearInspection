@@ -64,9 +64,9 @@ scout_ros/scout_msgs/CMakeFiles/scout_msgs_generate_messages_lisp: /home/ubuntu/
 /home/ubuntu/catkin_ws/devel/share/common-lisp/ros/scout_msgs/msg/ScoutStatus.lisp: /opt/ros/noetic/lib/genlisp/gen_lisp.py
 /home/ubuntu/catkin_ws/devel/share/common-lisp/ros/scout_msgs/msg/ScoutStatus.lisp: /home/ubuntu/catkin_ws/src/scout_ros/scout_msgs/msg/ScoutStatus.msg
 /home/ubuntu/catkin_ws/devel/share/common-lisp/ros/scout_msgs/msg/ScoutStatus.lisp: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/ubuntu/catkin_ws/devel/share/common-lisp/ros/scout_msgs/msg/ScoutStatus.lisp: /home/ubuntu/catkin_ws/src/scout_ros/scout_msgs/msg/ScoutDriverState.msg
-/home/ubuntu/catkin_ws/devel/share/common-lisp/ros/scout_msgs/msg/ScoutStatus.lisp: /home/ubuntu/catkin_ws/src/scout_ros/scout_msgs/msg/ScoutLightState.msg
 /home/ubuntu/catkin_ws/devel/share/common-lisp/ros/scout_msgs/msg/ScoutStatus.lisp: /home/ubuntu/catkin_ws/src/scout_ros/scout_msgs/msg/ScoutMotorState.msg
+/home/ubuntu/catkin_ws/devel/share/common-lisp/ros/scout_msgs/msg/ScoutStatus.lisp: /home/ubuntu/catkin_ws/src/scout_ros/scout_msgs/msg/ScoutLightState.msg
+/home/ubuntu/catkin_ws/devel/share/common-lisp/ros/scout_msgs/msg/ScoutStatus.lisp: /home/ubuntu/catkin_ws/src/scout_ros/scout_msgs/msg/ScoutDriverState.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Lisp code from scout_msgs/ScoutStatus.msg"
 	cd /home/ubuntu/catkin_ws/build/scout_ros/scout_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/ubuntu/catkin_ws/src/scout_ros/scout_msgs/msg/ScoutStatus.msg -Iscout_msgs:/home/ubuntu/catkin_ws/src/scout_ros/scout_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p scout_msgs -o /home/ubuntu/catkin_ws/devel/share/common-lisp/ros/scout_msgs/msg
 

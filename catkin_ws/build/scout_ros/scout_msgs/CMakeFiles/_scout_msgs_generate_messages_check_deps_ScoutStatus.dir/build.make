@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/ubuntu/catkin_ws/build
 include scout_ros/scout_msgs/CMakeFiles/_scout_msgs_generate_messages_check_deps_ScoutStatus.dir/progress.make
 
 scout_ros/scout_msgs/CMakeFiles/_scout_msgs_generate_messages_check_deps_ScoutStatus:
-	cd /home/ubuntu/catkin_ws/build/scout_ros/scout_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py scout_msgs /home/ubuntu/catkin_ws/src/scout_ros/scout_msgs/msg/ScoutStatus.msg std_msgs/Header:scout_msgs/ScoutDriverState:scout_msgs/ScoutLightState:scout_msgs/ScoutMotorState
+	cd /home/ubuntu/catkin_ws/build/scout_ros/scout_msgs && ../../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py scout_msgs /home/ubuntu/catkin_ws/src/scout_ros/scout_msgs/msg/ScoutStatus.msg std_msgs/Header:scout_msgs/ScoutMotorState:scout_msgs/ScoutLightState:scout_msgs/ScoutDriverState
 
 _scout_msgs_generate_messages_check_deps_ScoutStatus: scout_ros/scout_msgs/CMakeFiles/_scout_msgs_generate_messages_check_deps_ScoutStatus
 _scout_msgs_generate_messages_check_deps_ScoutStatus: scout_ros/scout_msgs/CMakeFiles/_scout_msgs_generate_messages_check_deps_ScoutStatus.dir/build.make
