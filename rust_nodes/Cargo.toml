@@ -1,0 +1,17 @@
+[package]
+name = "rust_nodes"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+env_logger = "0.11.11"
+log = "0.4.34"
+roslibrust = { version = "0.26.0", features = [ "codegen", "ros1"] }
+tokio = { version = "1.54.1", features = ["full"] }
+
+[dev-dependencies]
+roslibrust = { version = "0.26.0", features = ["mock"] }
+tokio = { version = "1.54.1", features = ["test-util"] }
+
+[build-dependencies]
+roslibrust = { version = "0.26.0", features = ["codegen"] }

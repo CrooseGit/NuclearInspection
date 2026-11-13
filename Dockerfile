@@ -38,6 +38,7 @@ ENV M2_HOME='/opt/maven'
 ENV PATH="$M2_HOME/bin:$PATH"
 
 
+
 # Create the ubuntu user if it does not exist
 RUN id ubuntu || ( \
     useradd -m -s /bin/bash ubuntu && \
@@ -60,6 +61,13 @@ ENV LC_ALL=en_US.UTF-8
 USER ubuntu
 WORKDIR /home/ubuntu
 
+## Install rustup and cargo
+RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y --no-modify-path
+ENV PATH="/home/ubuntu/.cargo/bin:$PATH"
+ENV CARGO_HOME="/home/ubuntu/.cargo"
+ENV RUSTUP_HOME="/home/ubuntu/.rustup"
+RUN . "/home/ubuntu/.cargo/env" && rustup default stable
+
 
 # Install Gazebo and required ROS packages
 USER root
@@ -67,8 +75,6 @@ RUN sh -c 'echo "deb http://packages.osrfoundation.org/gazebo/ubuntu-stable `lsb
     curl -sSL https://packages.osrfoundation.org/gazebo.key | apt-key add - && \
     apt update && apt install -y ros-noetic-gazebo-ros && \
     apt clean && rm -rf /var/lib/apt/lists/*
-
-
 
 ## Install IntelliJ IDEA (Community Edition)
 WORKDIR /tmp
