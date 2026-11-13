@@ -32,7 +32,7 @@ RUN apt update && apt install -y \
     && apt clean && rm -rf /var/lib/apt/lists/*
 
 ## Install Apache Maven
-RUN wget -qO- https://dlcdn.apache.org/maven/maven-3/3.9.11/binaries/apache-maven-3.9.11-bin.tar.gz | tar xz -C /opt/ \
+RUN wget -qO- https://dlcdn.apache.org/maven/maven-3/3.9.16/binaries/apache-maven-3.9.16-bin.tar.gz | tar xz -C /opt/ \
     && ln -s /opt/apache-maven-3.9.9 /opt/maven
 ENV M2_HOME='/opt/maven'
 ENV PATH="$M2_HOME/bin:$PATH"
