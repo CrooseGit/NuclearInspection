@@ -110,10 +110,9 @@
 
   <!-- ******************** CMD_VEL FILTERING ******************** -->
   <!-- Interceptor Node -->
-  <node name="cmd_vel_interceptor_node" pkg="cmd_vel_interceptor"
-      type="cmd_vel_interceptor_node.py" output="screen"/>
-
-
+  <node name="orchestrator" pkg="rust_nodes" type="orchestrator" output="screen">
+    <env name="RUST_LOG" value="info"/> <!-- So we get console logging -->
+  </node>
 
   <!--  **************** Visualisation ****************  -->
   <node name="rviz" pkg="rviz" type="rviz"  args="-d $(find scout_gazebo_sim)/rviz/nuclear_inspection.rviz"/>

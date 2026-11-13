@@ -1,0 +1,5 @@
+# Virtual Manifest for our Cargo Workspace
+# The workspace contains all the Cargo packages, where each package is a single ROS node.
+[workspace]
+members = ["orchestrator"]
+resolver = "3"

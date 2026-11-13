@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>rust_nodes</name>
+  <version>0.0.0</version>
+  <description>Wrapper package that builds the Rust nodes workspace and exposes each binary to rosrun/roslaunch</description>
+  <maintainer email="reubenfc@gmail.com">Reuben Cruise</maintainer>
+  <license>TODO</license>
+  <buildtool_depend>catkin</buildtool_depend>
+</package>
